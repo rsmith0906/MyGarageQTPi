@@ -28,7 +28,7 @@ class GarageDoor(object):
         # Set relay pin to output, state pin to input, and add a change listener to the state pin
         GPIO.setwarnings(False)
         GPIO.setmode(GPIO.BCM)
-        GPIO.setup(self.relay_pin, GPIO.OUT)
+        GPIO.setup(self.relay_pin, GPIO.OUT, pull_up_down=GPIO.PUD_UP)
         GPIO.setup(self.state_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
         GPIO.add_event_detect(self.state_pin, GPIO.BOTH, callback=self.__stateChanged, bouncetime=300)
 

@@ -1,13 +1,13 @@
 mqtt:
-    host: 
-    port: 
-    user: 
-    password: 
+    host: lulubun.duckdns.org 
+    port: 1883
+    user: homeassistant
+    password: 1Nee23Dogg
 doors:
     -
-        id: 
-        relay:
-        state:
+        id: 'main'
+        relay: 24
+        state: 18
 #        state_mode: normally_closed #defaults to normally open, uncomment to switch
 #        invert_relay: true #defaults to false, uncomment to turn relay pin on by default
         state_topic: "home-assistant/cover"
