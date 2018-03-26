@@ -1,8 +1,8 @@
 mqtt:
-    host: lulubun.duckdns.org 
+    host:
     port: 1883
     user: homeassistant
-    password: 1Nee23Dogg
+    password:
 doors:
     -
         id: 'main'
